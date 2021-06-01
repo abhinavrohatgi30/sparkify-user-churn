@@ -64,7 +64,7 @@ On futher hyperparameter tuning of the GBTClassifier we get the following metric
 
 This is our final model and will be used to predict the user churn for this streaming service.
 
-
 ## References
 
+You can find a summarised analysis here [Medium](https://abhi-rohatgi.medium.com/sparkify-predicting-the-user-churn-using-apache-spark-ee4178f859c8)
 Dataset provided by [Udacity](https://cn.udacity.com/).

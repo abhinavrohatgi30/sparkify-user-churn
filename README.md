@@ -46,32 +46,21 @@ Following 11 features are defined to build models
 
 The accuracy and F1 score of the three classification models used : Logistic Regression, Random Forest Classifier, Gradient Boosted Trees are,
 
-Logistic Regression Metrics:
-Accuracy of model is : 0.7443609022556391
-F1 score of model is :0.6724855617304131
-The training process of model took 13.907336235046387 seconds
 
-Random Forest Metrics:
-Accuracy of model is : 0.7969924812030075
-F1 score of model is :0.7585255822483037
-The training process of model took 12.764495134353638 seconds
+| Model                  | Accuracy | F1-score | Training Time  |
+|------------------------|----------|----------|----------------|
+| Logistic Regression    | 0.744    | 0.672    | 13.9 s         |
+| Random Forrest         | 0.796    | 0.758    | 12.76 s        |
+| Gradient Boosted Trees | 0.827    | 0.799    | 31.33 s        |
 
-Gradient Boosted Trees Metrics:
-Accuracy of model is : 0.8270676691729323
-F1 score of model is :0.799474962304081
-The training process of model took 31.332529306411743 seconds
-
-Why Gradient Boosted Model is best for our scenario?
-First of all we used f1-score to select our final model because our problem is classification one and f1-score can help us to find the balance between accuracy and recall. Higher the f1-score the more perfect our model will be as false negative and false positive will be less.
 
 Here Gradient Boosted Trees has best f1-score that's why I choose it for the next steps.
 
 
 On futher hyperparameter tuning of the GBTClassifier we get the following metrics,
-
-Gradient Boosted Trees Model - Test Metrics with best parameters:
-Accuracy of model is :  0.8287671232876712
-F1 score of model is : 0.8184619228046801
+| Model                  | Accuracy | F1-score |
+|------------------------|----------|----------|
+| Gradient Boosted Trees | 0.828    | 0.818    |
 
 This is our final model and will be used to predict the user churn for this streaming service.
 
